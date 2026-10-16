@@ -1,2 +1,4 @@
 .env
 destination_key.json
+__pycache__/
+venv/
