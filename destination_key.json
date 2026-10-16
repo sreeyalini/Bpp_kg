@@ -1,0 +1,18 @@
+{
+  "tenantmode": "dedicated",
+  "token-type": [
+    "xsuaa",
+    "ias"
+  ],
+  "clientid": "sb-cloneae815393b33747a09bc62e5673eb9b1a!b156529|destination-xsappname!b62",
+  "credential-type": "binding-secret",
+  "xsappname": "cloneae815393b33747a09bc62e5673eb9b1a!b156529|destination-xsappname!b62",
+  "clientsecret": "e210cf3d-3526-447c-a6ff-c0ef10fff781$D7NLD0hJqHqse42K_OCxXniaCNy216qMCFzHynscQ1I=",
+  "uri": "https://destination-configuration.cfapps.us10.hana.ondemand.com",
+  "url": "https://poc-mc10.authentication.us10.hana.ondemand.com",
+  "uaadomain": "authentication.us10.hana.ondemand.com",
+  "instanceid": "ae815393-b337-47a0-9bc6-2e5673eb9b1a",
+  "verificationkey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu90Cq/VGjVzbJ/ETAhd4\nKoRZAKks/xRCCy0X5SyD8qnpQEWZPpU32nbhtGZMg/qVD37OluARw2D1WvuBRark\nYjZ247Rhoav4U+U3Dt1dzPqS/iywv1X7H9uZa5HI+FVfw6vjEhYqBfrrMVTgQMUp\nc0eDUoti5zKUx+Cup4dba2eQqxXKqgG5lq9OHruC/eWpOUMamD3UHxRCaq5QqNs3\nA+h5RNfpKPqGaRguPu4I9y0k6tEOEkbvUw7jY7wBGbGKNq2BdDxX5YA/hFtxGwAc\nBBKryfTuOBSqLM7oi6s50Iqy7iihzFP9yKrNxn5liWTXdFGR9EN1bt0PSZKcW+nx\n6QIDAQAB\n-----END PUBLIC KEY-----",
+  "identityzone": "poc-mc10",
+  "tenantid": "499a1aaa-8f6d-4906-8f4f-84dd5bdd224f"
+}

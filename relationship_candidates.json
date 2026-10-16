@@ -1,0 +1,198 @@
+[
+  {
+    "source": "data_lake.xlsx::VW_OWNER_MONTHLY_REVENUE",
+    "source_column": "Owner Id",
+    "target": "data_lake.xlsx::VW_OWNER_REVENUE_TRENDS",
+    "target_column": "Owner Id",
+    "predicate": "references"
+  },
+  {
+    "source": "data_lake.xlsx::VW_OWNER_MONTHLY_REVENUE",
+    "source_column": "Owner Id",
+    "target": "revenue_data.xlsx::Tax Reporting",
+    "target_column": "Owner Id",
+    "predicate": "references"
+  },
+  {
+    "source": "data_lake.xlsx::VW_WELL_PRODUCTION_MONTHLY",
+    "source_column": "Well Id",
+    "target": "land.xlsx::Well Locations",
+    "target_column": "Well Id",
+    "predicate": "references"
+  },
+  {
+    "source": "data_lake.xlsx::VW_WELL_PRODUCTION_MONTHLY",
+    "source_column": "Well Id",
+    "target": "lease.xlsx::Wells",
+    "target_column": "Well Id",
+    "predicate": "references"
+  },
+  {
+    "source": "data_lake.xlsx::VW_WELL_PRODUCTION_MONTHLY",
+    "source_column": "Lease Id",
+    "target": "lease.xlsx::Leases",
+    "target_column": "Lease Id",
+    "predicate": "references"
+  },
+  {
+    "source": "data_lake.xlsx::VW_OWNER_REVENUE_TRENDS",
+    "source_column": "Owner Id",
+    "target": "revenue_data.xlsx::Tax Reporting",
+    "target_column": "Owner Id",
+    "predicate": "references"
+  },
+  {
+    "source": "knowledge_repo.xlsx::Documents",
+    "source_column": "Owner Id",
+    "target": "data_lake.xlsx::VW_OWNER_REVENUE_TRENDS",
+    "target_column": "Owner Id",
+    "predicate": "references"
+  },
+  {
+    "source": "knowledge_repo.xlsx::Documents",
+    "source_column": "Owner Id",
+    "target": "revenue_data.xlsx::Tax Reporting",
+    "target_column": "Owner Id",
+    "predicate": "references"
+  },
+  {
+    "source": "land.xlsx::Tracts",
+    "source_column": "Lease Id",
+    "target": "lease.xlsx::Leases",
+    "target_column": "Lease Id",
+    "predicate": "references"
+  },
+  {
+    "source": "land.xlsx::Tracts",
+    "source_column": "Owner Id",
+    "target": "data_lake.xlsx::VW_OWNER_REVENUE_TRENDS",
+    "target_column": "Owner Id",
+    "predicate": "references"
+  },
+  {
+    "source": "land.xlsx::Tracts",
+    "source_column": "Owner Id",
+    "target": "revenue_data.xlsx::Tax Reporting",
+    "target_column": "Owner Id",
+    "predicate": "references"
+  },
+  {
+    "source": "land.xlsx::Ownership History",
+    "source_column": "Tract Id",
+    "target": "land.xlsx::Tracts",
+    "target_column": "Tract Id",
+    "predicate": "references"
+  },
+  {
+    "source": "land.xlsx::Well Locations",
+    "source_column": "Tract Id",
+    "target": "land.xlsx::Tracts",
+    "target_column": "Tract Id",
+    "predicate": "references"
+  },
+  {
+    "source": "land.xlsx::Well Locations",
+    "source_column": "Well Id",
+    "target": "lease.xlsx::Wells",
+    "target_column": "Well Id",
+    "predicate": "references"
+  },
+  {
+    "source": "lease.xlsx::Leases",
+    "source_column": "Owner Id",
+    "target": "data_lake.xlsx::VW_OWNER_REVENUE_TRENDS",
+    "target_column": "Owner Id",
+    "predicate": "references"
+  },
+  {
+    "source": "lease.xlsx::Leases",
+    "source_column": "Owner Id",
+    "target": "revenue_data.xlsx::Tax Reporting",
+    "target_column": "Owner Id",
+    "predicate": "references"
+  },
+  {
+    "source": "lease.xlsx::Wells",
+    "source_column": "Lease Id",
+    "target": "lease.xlsx::Leases",
+    "target_column": "Lease Id",
+    "predicate": "references"
+  },
+  {
+    "source": "lease.xlsx::Wells",
+    "source_column": "Well Id",
+    "target": "land.xlsx::Well Locations",
+    "target_column": "Well Id",
+    "predicate": "references"
+  },
+  {
+    "source": "lease.xlsx::Transactions",
+    "source_column": "Lease Id",
+    "target": "lease.xlsx::Leases",
+    "target_column": "Lease Id",
+    "predicate": "references"
+  },
+  {
+    "source": "lease.xlsx::Transactions",
+    "source_column": "Owner Id",
+    "target": "data_lake.xlsx::VW_OWNER_REVENUE_TRENDS",
+    "target_column": "Owner Id",
+    "predicate": "references"
+  },
+  {
+    "source": "lease.xlsx::Transactions",
+    "source_column": "Owner Id",
+    "target": "revenue_data.xlsx::Tax Reporting",
+    "target_column": "Owner Id",
+    "predicate": "references"
+  },
+  {
+    "source": "master_records.xlsx::Golden Records",
+    "source_column": "Owner Id",
+    "target": "data_lake.xlsx::VW_OWNER_REVENUE_TRENDS",
+    "target_column": "Owner Id",
+    "predicate": "references"
+  },
+  {
+    "source": "master_records.xlsx::Golden Records",
+    "source_column": "Owner Id",
+    "target": "revenue_data.xlsx::Tax Reporting",
+    "target_column": "Owner Id",
+    "predicate": "references"
+  },
+  {
+    "source": "master_records.xlsx::Division Orders",
+    "source_column": "Well Id",
+    "target": "land.xlsx::Well Locations",
+    "target_column": "Well Id",
+    "predicate": "references"
+  },
+  {
+    "source": "master_records.xlsx::Division Orders",
+    "source_column": "Well Id",
+    "target": "lease.xlsx::Wells",
+    "target_column": "Well Id",
+    "predicate": "references"
+  },
+  {
+    "source": "master_records.xlsx::Division Orders",
+    "source_column": "Owner Id",
+    "target": "data_lake.xlsx::VW_OWNER_REVENUE_TRENDS",
+    "target_column": "Owner Id",
+    "predicate": "references"
+  },
+  {
+    "source": "master_records.xlsx::Division Orders",
+    "source_column": "Owner Id",
+    "target": "revenue_data.xlsx::Tax Reporting",
+    "target_column": "Owner Id",
+    "predicate": "references"
+  },
+  {
+    "source": "revenue_data.xlsx::Tax Reporting",
+    "source_column": "Owner Id",
+    "target": "data_lake.xlsx::VW_OWNER_REVENUE_TRENDS",
+    "target_column": "Owner Id",
+    "predicate": "references"
+  }
+]
